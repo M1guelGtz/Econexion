@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './Modulos/login/login/login.component';
+import { RegistroComponent } from './Modulos/login/registro/registro.component';
 import { NotFoundComponent } from './Modulos/not-found/not-found.component';
+import { DashboardComponent } from './Modulos/usuarios/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -12,6 +14,12 @@ const routes: Routes = [
     path: '',
     redirectTo : 'login',
     pathMatch: 'full'
+  },{
+    path: 'dashboard',
+    component: DashboardComponent
+  },{
+    path: 'registro',
+    component: RegistroComponent
   },
   {
     path: '**',
