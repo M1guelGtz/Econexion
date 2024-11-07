@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginModule } from './Modulos/login/login.module';
@@ -11,14 +11,15 @@ import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
     UsuariosModule,
-    UsuariosRoutingModule
+    UsuariosRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
