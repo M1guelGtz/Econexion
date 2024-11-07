@@ -1,5 +1,5 @@
-<div class="h-screen  flex flex-col">
-    <header class="flex bg-white items-center justify-between h-20 p-5 w-full shadow-2xl">
+<div class="flex h-screen flex-col">
+    <header class="flex absolute top-0 left-0 bg-white items-center justify-between h-[15%] p-5 w-full shadow-2xl">
       <!-------------------------------  logotipo  ----------------------------->
       <div class="flex items-cente space-x-3">
         <img src="LOGO.png" alt="Logo" class="w-[35px] h-[35px] rounded-full" >
@@ -12,15 +12,15 @@
       </div>
     </header>
   <!---->
-    <div class="flex  flex-1">
-      <aside class="w-60 p-4 border-r bg-white border-solid border-green-500 bg-transparent">
+    <div class="top-[15%] left-0 absolute flex h-[85%] flex-1">
+      <aside class="w-52 p-4 border-r  bg-white border-solid border-green-500 bg-transparent">
         <nav class="space-y-4 flex flex-col">
-          <a routerLink="eventos" class="flex items-center  bg-[#61A146]  text-white font-semibold p-2 rounded hover:bg-white hover:border hover:border-[#61A146] hover:text-[#61A146]"> <i class="bg-white inline-block w-8 h-8 rounded-md mr-5">i</i>Eventos</a>
+          <a routerLink="eventos"  class="flex items-center  bg-[#61A146]  text-white font-semibold p-2 rounded hover:bg-white hover:border hover:border-[#61A146] hover:text-[#61A146]"> <i class="bg-white inline-block w-8 h-8 rounded-md mr-5">i</i>Eventos</a>
           <a routerLink="foros" class="flex items-center  bg-[#61A146]  text-white font-semibold p-2 rounded-lg hover:bg-white hover:border hover:border-[#61A146] hover:text-[#61A146]"> <i class="bg-white inline-block w-8 h-8 rounded-md mr-5">i</i>foros</a>
         </nav>
       </aside>
-      <main class="flex-1 p-6  overflow-y-auto">
-        <ng-content></ng-content>
-      </main>
     </div>
+    <main class="flex-1 ml-52 mt-[88px] border-t border-green-500 overflow-hidden overflow-y-scroll">
+      <app-publicaciones></app-publicaciones>
+    </main>
   </div>
