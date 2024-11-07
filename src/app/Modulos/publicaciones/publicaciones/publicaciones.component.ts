@@ -10,16 +10,26 @@ export class PublicacionesComponent {
 
   publicaciones = [
     {
-      usuario: 'Nombre del usuario',
+      titulo: "Limpieza de rios en suchiapa",
+      usuario: 'Rodrigo Emilio',
       fecha: this.getCurrentDate(),
       imagen: 'LOGO.png', 
-      descripcion: 'Descripción'
+      descripcion: 'Recoleccion de basura en los rios de la ciudad de suchiapa chiapas el dia 22 de diciembre del 2024, el evento comenzara en las afueras del panten a las 4:30 pm'
+
     },
     {
-      usuario: 'Nombre del usuario',
+      titulo: "Recoleccion de basura en las calles",
+      usuario: 'Miguel Gtz',
       fecha: this.getCurrentDate(),
       imagen: 'LOGO.png', 
-      descripcion: 'RECOLECCIÓN DE BASURA'
+      descripcion: 'Recoleccion de basura en la ciudad de suchiapa chiapas el dia 22 de diciembre del 2024, el evento comenzara en las afueras del panten a las 4:30 pm'
+    },
+    {
+      titulo: "Carlos Daniel",
+      usuario: 'Carlos Daniel',
+      fecha: this.getCurrentDate(),
+      imagen: 'LOGO.png', 
+      descripcion: 'descripcion de la publicacion'
     }
   ];
 
