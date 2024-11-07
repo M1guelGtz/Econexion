@@ -1,0 +1,27 @@
+<div class="h-screen flex flex-col">
+    <header class="bg-white p-4 flex items-center justify-between  w-full border-b-2 border-solid border-green-200 shadow-2xl ">
+      <div class="flex items-center space-x-3">
+        <img src="LOGO.png" alt="Logo" class="h-8">
+        <h1 class="text-2xl font-bold text-green-800">ECONEXION</h1>
+      </div>
+      <div class="flex space-x-3">
+        <button class="text-green-800"><i class="fas fa-search"></i>hola</button>
+        <button class="text-green-800"><i class="fas fa-envelope"></i>adios</button>
+        <button class="text-green-800"><i class="fas fa-user-circle"></i>buenas</button>
+      </div>
+    </header>
+  
+    <div class="flex flex-1">
+      <aside class="bg-white w-60 p-4 border-r-2 border-solid border-green-500 ">
+        <nav class="space-y-4">
+          <a href="#" style="background-color: #61A146;" class="block text-white font-semibold py-2 px-3 rounded hover:bg-green-300">Eventos</a>
+          <a href="#"  style="background-color: #61A146;" class="block text-white font-semibold py-2 px-3 rounded hover:bg-green-300">Foros</a>
+        </nav>
+      </aside>
+  
+      <main class="flex-1 p-6 bg-gray-100 overflow-y-auto">
+        <ng-content></ng-content>
+      </main>
+    </div>
+  </div>
+  

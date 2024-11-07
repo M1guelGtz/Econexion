@@ -7,6 +7,7 @@ import { LoginModule } from './Modulos/login/login.module';
 import { NotFoundComponent } from './Modulos/not-found/not-found.component';
 import { UsuariosRoutingModule } from './Modulos/usuarios/usuarios-routing.module';
 import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
+import { PublicacionesModule } from './Modulos/publicaciones/publicaciones.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
     LoginModule,
     UsuariosModule,
     UsuariosRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PublicacionesModule
   ],
   providers: [
     provideClientHydration()

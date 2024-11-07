@@ -1,0 +1,13 @@
+<app-layout>
+    <div class="space-y-6 ">
+      <div *ngFor="let publicacion of publicaciones" class="bg-white rounded-xl p-4 border shadow-xl w-3/5">
+        <div class="flex justify-between items-center mb- ">
+          <span class="font-semibold text-green-800">Nombre del usuario:</span>
+          <span class="text-sm text-gray-500">{{ publicacion.fecha }}</span>
+        </div>
+        <img [src]="publicacion.imagen" alt="Imagen de publicación" class=" w-50% h-50 object-cover mb-2 rounded-sm ">
+        <p class="text-gray-700">{{ publicacion.descripcion }}</p>
+      </div>
+    </div>
+  </app-layout>
+  
