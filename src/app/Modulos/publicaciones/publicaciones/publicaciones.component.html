@@ -1,13 +1,20 @@
 <app-layout>
-    <div class="space-y-6 ">
-      <div *ngFor="let publicacion of publicaciones" class="bg-white rounded-xl p-4 border shadow-xl w-3/5">
-        <div class="flex justify-between items-center mb- ">
-          <span class="font-semibold text-green-800">Nombre del usuario:</span>
+    <div class="space-y-6 w-full flex flex-col items-center p-5">
+      <div *ngFor="let publicacion of publicaciones" class="bg-white shadow-lg flex-col flex justify-between rounded-xl p-4 border  w-3/5">
+        <div class="w-full flex justify-between">
+          <h1 class="px-5">titulo</h1>
           <span class="text-sm text-gray-500">{{ publicacion.fecha }}</span>
+
         </div>
-        <img [src]="publicacion.imagen" alt="Imagen de publicación" class=" w-50% h-50 object-cover mb-2 rounded-sm ">
-        <p class="text-gray-700">{{ publicacion.descripcion }}</p>
+        <div class="border border-dashed border-green-800 flex justify-between rounded-xl ">
+          <div class="flex justify-between items-center p-5 flex-col ">
+            <span class="font-semibold text-green-800">Nombre del usuario:</span>
+            <p class="text-gray-700">{{ publicacion.descripcion }}</p>
+          </div>
+          <div class="w-[50%] flex-col flex items-end h-50 object-cover">
+            <img [src]="publicacion.imagen" alt="Imagen de publicación" class="rounded-r-xl  w-full ">
+          </div>
+        </div>
       </div>
     </div>
   </app-layout>
-  
