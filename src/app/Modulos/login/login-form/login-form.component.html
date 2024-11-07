@@ -1,0 +1,16 @@
+<h1 class="w-full text-center text-[#61A146] text-4xl p-5">
+    Iniciar sesion
+</h1>
+
+<form class="flex text-[#61A146] flex-col justify-between w-[100%] h-[350px] p-10 bg-white border border-black" (submit)="IniciarSesion()">
+    <label class=""  for="">
+        <span>Usuario:</span>
+        <input class="w-full text-center border-2 rounded-lg border-[#BDE7AC] p-3" type="text" name="name" placeholder="Introduzca su nombre de usuario">
+    </label>
+    <label class=""  for="">
+        <span>Contraseña</span>
+        <input class="w-full text-center  border-2 rounded-lg border-[#BDE7AC] p-3" type="text" name="name" placeholder="Introduzca su nombre de usuario">
+    </label>
+    <button class="p-3 text-white bg-[#61A146] rounded-lg w-full">Iniciar sesion</button>
+    <span class="block w-full text-center">No tienes una cuenta? <a class="hover:border-b hover:border-[#61A146] hover:text-[#346321]" href="/registro">Registrate</a></span>
+</form>
