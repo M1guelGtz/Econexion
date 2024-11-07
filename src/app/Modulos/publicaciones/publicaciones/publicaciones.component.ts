@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-publicaciones',
@@ -22,7 +23,10 @@ export class PublicacionesComponent {
     }
   ];
 
-  constructor() {}
+  constructor(private _title : Title) {}
+  ngOnInit(): void {
+    this._title.setTitle('Econexion | Publicaciones')
+  }
 
   getCurrentDate(): string {
     const today = new Date();

@@ -25,7 +25,7 @@ const routes: Routes = [
     component: RegistroComponent
   },
   {
-    path: 'publicaciones', // Nueva ruta para las publicaciones
+    path: 'publicaciones', 
     component: LayoutComponent
   },
   {
