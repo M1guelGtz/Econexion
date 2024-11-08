@@ -34,14 +34,26 @@ export class PublicacionesComponent {
   ];
 
   constructor(private _title : Title) {}
+  mostrarAlerta: boolean = false;
+
   ngOnInit(): void {
     this._title.setTitle('Econexion | Publicaciones')
+      if (localStorage.getItem('sesionIniciada') === 'true') {
+        this.mostrarAlerta = true;
+        localStorage.removeItem('sesionIniciada');
+        setTimeout(() => this.mostrarAlerta = false, 5000);
+      
+      }
+  }
+  
+  manejarCierreAlerta() {
+    this.mostrarAlerta = false;
   }
 
   getCurrentDate(): string {
     const today = new Date();
     const day = String(today.getDate()).padStart(2, '0');
-    const month = String(today.getMonth() + 1).padStart(2, '0'); // Enero es 0
+    const month = String(today.getMonth() + 1).padStart(2, '0'); 
     const year = today.getFullYear();
     return `${day}/${month}/${year}`;
   }
