@@ -15,12 +15,13 @@
     <div class="top-[15%] left-0 absolute flex h-[85%] flex-1">
       <aside class="w-52 p-4 border-r  bg-white border-solid border-green-500 bg-transparent">
         <nav class="space-y-4 flex flex-col">
-          <a routerLink="eventos"  class="flex items-center  bg-[#61A146]  text-white  p-2 rounded hover:bg-white hover:border hover:border-[#61A146] hover:text-[#61A146]"> <img src="chek.png" alt="check" class="w-[30px] mr-5 rounded border h-[30px]">Eventos</a>
-          <a routerLink="foros" class="flex items-center  bg-[#61A146]  text-white  p-2 rounded-lg hover:bg-white hover:border hover:border-[#61A146] hover:text-[#61A146]"> <img src="handshake.png" alt="handshake" class="w-[30px] rounded border mr-5 h-[30px]">foros</a>
+          <a routerLink="eventos"  class="flex items-center  bg-[#61A146]  text-white  p-2 rounded  hover:border hover:border-[#61A146] hover:text-[#ffffff]"> <img src="chek.png" alt="check" class="w-[30px] mr-5 rounded border h-[30px]">Eventos</a>
+          <a routerLink="foros" class="flex items-center  bg-[#61A146]  text-white  p-2 rounded-lg + hover:border hover:border-[#61A146] hover:text-[#ffffff]"> <img src="handshake.png" alt="handshake" class="w-[30px] rounded border mr-5 h-[30px]">foros</a>
+          <a routerLink="Formpublicaciones" class="flex items-center  bg-[#61A146]  text-white  p-2 rounded-lg  hover:border hover:border-[#61A146] hover:text-[#ffffff]"> <img src="handshake.png" alt="handshake" class="w-[30px] rounded border mr-5 h-[30px]">Crear Publicación</a>       
         </nav>
       </aside>
     </div>
     <main class="flex-1 ml-52 mt-[88px] pt-10 bg-white border-t border-green-500 overflow-hidden overflow-y-scroll">
-      <app-publicaciones></app-publicaciones>
+      <ng-content></ng-content>
     </main>
   </div>
