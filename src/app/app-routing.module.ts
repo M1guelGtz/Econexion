@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './Modulos/login/login/login.component';
 import { RegistroComponent } from './Modulos/login/registro/registro.component';
 import { NotFoundComponent } from './Modulos/not-found/not-found.component';
-import { LayoutComponent } from './Modulos/publicaciones/layout/layout.component';
+import { LayoutComponent } from './Modulos/shared-module/layout/layout.component';
 import { DashboardComponent } from './Modulos/usuarios/dashboard/dashboard.component';
 import { PublicacionesComponent } from './Modulos/publicaciones/publicaciones/publicaciones.component';
 import path from 'path';

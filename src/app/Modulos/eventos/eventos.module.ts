@@ -5,6 +5,7 @@ import { EventosRoutingModule } from './eventos-routing.module';
 import { CardEventosComponent } from './card-eventos/card-eventos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { FormEventosComponent } from './form-eventos/form-eventos.component';
+import { SharedModuleModule } from '../shared-module/shared-module.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormEventosComponent } from './form-eventos/form-eventos.component';
   ],
   imports: [
     CommonModule,
-    EventosRoutingModule
+    EventosRoutingModule,
+    SharedModuleModule
   ]
 })
 export class EventosModule { }

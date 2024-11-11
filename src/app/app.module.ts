@@ -9,6 +9,7 @@ import { UsuariosRoutingModule } from './Modulos/usuarios/usuarios-routing.modul
 import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
 import { PublicacionesModule } from './Modulos/publicaciones/publicaciones.module';
 import { EventosModule } from './Modulos/eventos/eventos.module';
+import { SharedModuleModule } from './Modulos/shared-module/shared-module.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { EventosModule } from './Modulos/eventos/eventos.module';
     UsuariosRoutingModule,
     ReactiveFormsModule,
     PublicacionesModule,
-    EventosModule
+    EventosModule,
   ],
   providers: [
     provideClientHydration()

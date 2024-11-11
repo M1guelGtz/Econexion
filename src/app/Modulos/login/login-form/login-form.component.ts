@@ -21,7 +21,6 @@ export class LoginFormComponent {
   IniciarSesion(){
     if (this.loginFormulario.valid) {
       console.log(this.loginFormulario.value);
-      localStorage.setItem('sesionIniciada', 'true');
       this._router.navigate(["/publicaciones"])
       console.log('Iniciar Sesion');
       console.log(URL_API_.apiUrl)
