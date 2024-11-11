@@ -8,6 +8,7 @@ import { NotFoundComponent } from './Modulos/not-found/not-found.component';
 import { UsuariosRoutingModule } from './Modulos/usuarios/usuarios-routing.module';
 import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
 import { PublicacionesModule } from './Modulos/publicaciones/publicaciones.module';
+import { EventosModule } from './Modulos/eventos/eventos.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PublicacionesModule } from './Modulos/publicaciones/publicaciones.modul
     UsuariosModule,
     UsuariosRoutingModule,
     ReactiveFormsModule,
-    PublicacionesModule
+    PublicacionesModule,
+    EventosModule
   ],
   providers: [
     provideClientHydration()

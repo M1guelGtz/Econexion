@@ -9,12 +9,6 @@ const routes: Routes = [
     path: 'eventos',
     component: RegistroComponent
   },
-  {
-    path: 'foros',
-    component: DashboardComponent
-  },
-  { path: 'Formpublicaciones', 
-    component: FormpublicacionComponent }
 ];
 
 @NgModule({
