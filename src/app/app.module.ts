@@ -10,6 +10,7 @@ import { UsuariosModule } from './Modulos/usuarios/usuarios.module';
 import { PublicacionesModule } from './Modulos/publicaciones/publicaciones.module';
 import { EventosModule } from './Modulos/eventos/eventos.module';
 import { SharedModuleModule } from './Modulos/shared-module/shared-module.module';
+import { ForosModule } from './Modulos/foros/foros.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SharedModuleModule } from './Modulos/shared-module/shared-module.module
     ReactiveFormsModule,
     PublicacionesModule,
     EventosModule,
+    ForosModule
   ],
   providers: [
     provideClientHydration()

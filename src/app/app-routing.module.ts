@@ -10,6 +10,7 @@ import path from 'path';
 import { FormpublicacionComponent } from './Modulos/publicaciones/formpublicacion/formpublicacion.component';
 import { EventosComponent } from './Modulos/eventos/eventos/eventos.component';
 import { FormEventosComponent } from './Modulos/eventos/form-eventos/form-eventos.component';
+import { ForosComponent } from './Modulos/foros/foros/foros.component';
 
 const routes: Routes = [
   {
@@ -45,7 +46,10 @@ const routes: Routes = [
       path :'formeventos',
         component : FormEventosComponent
       },
-
+      {
+      path :'foros',
+      component : ForosComponent
+    },
   {
     path: '**',
     component: NotFoundComponent
